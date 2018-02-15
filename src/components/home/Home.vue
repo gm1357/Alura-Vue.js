@@ -18,9 +18,11 @@
 </template>
 
 <script>
-import Painel from '../shared/painel/Painel.vue'
-import ImagemResponsiva from '../shared/imagem-responsiva/ImagemResponsiva.vue'
-import Botao from '../shared/botao/Botao.vue'
+import Painel from '../shared/painel/Painel.vue';
+import ImagemResponsiva from '../shared/imagem-responsiva/ImagemResponsiva.vue';
+import Botao from '../shared/botao/Botao.vue';
+
+import Transform from '../../directives/Transform';
 
 export default {
 
@@ -28,6 +30,10 @@ export default {
     'meu-painel': Painel,
     'imagem-responsiva': ImagemResponsiva,
     'meu-botao': Botao
+  },
+
+  directives: {
+    'meu-transform': Transform
   },
   
   data () {
